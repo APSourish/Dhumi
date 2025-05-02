@@ -2,8 +2,8 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
-export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/Dhumi/' : '/',
+export default defineConfig(({ mode }) => ({
+  base: mode === 'development' ? '/' : '/Dhumi/',
   plugins: [react(), tailwindcss()],
   build: {
     chunkSizeWarningLimit: 1500,
