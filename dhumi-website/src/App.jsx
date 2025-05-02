@@ -1,10 +1,14 @@
-import Page from "./Dhumi-page-1/Page";
+import React, { lazy, Suspense } from 'react';
+
+// const Page = lazy(() => import('./Dhumi-page-1/Page'));
+import Page from './Dhumi-page-1/Page';
 
 function App(){
   return(
-    <div >
-      <Page/>
-    </div>
+    // <Suspense fallback={<div>Loading...</div>}>
+    //   <Page />
+    // </Suspense>
+    <Page/>
   )
 }
 
