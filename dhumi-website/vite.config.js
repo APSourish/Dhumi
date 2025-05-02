@@ -1,10 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
 
-export default defineConfig({
-  base: '/Dhumi/',
-  plugins: [react(),tailwindcss()],
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/Dhumi/' : '/',
+  plugins: [react(), tailwindcss()],
   build: {
     chunkSizeWarningLimit: 1500,
     rollupOptions: {
@@ -21,4 +21,4 @@ export default defineConfig({
       },
     },
   },
-})
+}));
