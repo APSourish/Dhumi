@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://sourish101.github.io/dhumi-web-page",
+  "homepage": "https://APSourish.github.io/Dhumi",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
