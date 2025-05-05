@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import Activity from "./Activity";
+// import Activity from "./Activity";
 import About from "./About";
 import WorkFlow from "./WorkFlow";
 
@@ -54,9 +54,9 @@ function OverallContent({ toggleTheme }) {
           <About toggleTheme={toggleTheme} />
         </div>
 
-        <div ref={activityRef}>
+        {/* <div ref={activityRef}>
           <Activity />
-        </div>
+        </div> */}
 
         <div ref={workflowRef} >
           <WorkFlow />
